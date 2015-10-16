@@ -13,24 +13,34 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <ToggleButton
-        android:id="@+id/toggleButton1"
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ToggleButton" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="true"
-        android:textOff="@string/toggle_turn_off"
-        android:textOn="@string/toggle_turn_on" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/example_edittext" />
 
     <Button
-        android:id="@+id/btnDisplay"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_display" />
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="130dp"
+        android:text="@string/show_the_text" />
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="61dp"
+        android:ems="10"
+        android:text="@string/enter_text" android:inputType="text" />
+
 
 </LinearLayout>
